@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structepaper__paint__t" kind="struct" language="C++" prot="public">
+    <compoundname>epaper_paint_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structepaper__paint__t_1a15aeecd4f26adaf186e10b3af87444cf" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* epaper_paint_t::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="63" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structepaper__paint__t_1ad3ad261f8a1750653a116e576451ba46" prot="public" static="no" mutable="no">
+        <type>epaper_rotate_t</type>
+        <definition>epaper_rotate_t epaper_paint_t::rotate</definition>
+        <argsstring></argsstring>
+        <name>rotate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="64" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structepaper__paint__t_1a37feacc9d7422e0c6e1fea5c7fe35e98" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int epaper_paint_t::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="65" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structepaper__paint__t_1a8aeb3a92e3fd95bcb092213313968cee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int epaper_paint_t::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="66" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="62" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="62" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structepaper__paint__t_1a8aeb3a92e3fd95bcb092213313968cee" prot="public" virt="non-virtual"><scope>epaper_paint_t</scope><name>height</name></member>
+      <member refid="structepaper__paint__t_1a15aeecd4f26adaf186e10b3af87444cf" prot="public" virt="non-virtual"><scope>epaper_paint_t</scope><name>image</name></member>
+      <member refid="structepaper__paint__t_1ad3ad261f8a1750653a116e576451ba46" prot="public" virt="non-virtual"><scope>epaper_paint_t</scope><name>rotate</name></member>
+      <member refid="structepaper__paint__t_1a37feacc9d7422e0c6e1fea5c7fe35e98" prot="public" virt="non-virtual"><scope>epaper_paint_t</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

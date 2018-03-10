@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_1c423dfff990d40529381b1670494fc0" kind="dir">
+    <compoundname>/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke</compoundname>
+    <innerfile refid="epaper-29-dke_8h">epaper-29-dke.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/"/>
+  </compounddef>
+</doxygen>

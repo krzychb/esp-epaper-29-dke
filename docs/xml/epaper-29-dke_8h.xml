@@ -1,0 +1,1584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="epaper-29-dke_8h" kind="file" language="C++">
+    <compoundname>epaper-29-dke.h</compoundname>
+    <includes local="yes">driver/spi_master.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>driver/spi_master.h</label>
+      </node>
+      <node id="0">
+        <label>/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h</label>
+        <link refid="epaper-29-dke.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structepaper__font__t" prot="public">epaper_font_t</innerclass>
+    <innerclass refid="structepaper__paint__t" prot="public">epaper_paint_t</innerclass>
+    <innerclass refid="structepaper__conf__t" prot="public">epaper_conf_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="epaper-29-dke_8h_1a6dc8f5f6cd3fb1bdf454fe905019a666" prot="public" static="no">
+        <name>COLORED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="39" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1aa3a4fe91f0304c64711c2b91d6d24781" prot="public" static="no">
+        <name>UNCOLORED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="40" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a2353642a16205a5703d3eee1a380b688" prot="public" static="no">
+        <name>EPD_WIDTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="43" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1acc00aa795cb4caf43eedb9d1ea33955d" prot="public" static="no">
+        <name>EPD_HEIGHT</name>
+        <initializer>296</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="44" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a19fb132816c8cc9bdead7cb22d7d853b" prot="public" static="no">
+        <name>E_PAPER_DRIVER_OUTPUT_CONTROL</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="48" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a898d92fe18f931054ac80c8c4b08e683" prot="public" static="no">
+        <name>E_PAPER_DEEP_SLEEP_MODE</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="49" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a2cae6737d81436fb5e18dfd817985f0d" prot="public" static="no">
+        <name>E_PAPER_SW_RESET</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="50" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a6473a2e11e44330012b7a566433ca43e" prot="public" static="no">
+        <name>E_PAPER_MASTER_ACTIVATION</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="51" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a90f344c85c919dc251e2a46bafd8c547" prot="public" static="no">
+        <name>E_PAPER_DISPLAY_UPDATE_CONTROL_2</name>
+        <initializer>0x22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="52" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a13926d46cf845901b101eb5d0760d80a" prot="public" static="no">
+        <name>E_PAPER_WRITE_RAM</name>
+        <initializer>0x24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="53" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a0c41a8b7f52c55abe512aa3c7da92b91" prot="public" static="no">
+        <name>E_PAPER_WRITE_VCOM_REGISTER</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="54" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1ac119c79f5d61b37ab8c62132085dc4eb" prot="public" static="no">
+        <name>E_PAPER_WRITE_LUT_REGISTER</name>
+        <initializer>0x32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="55" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1af5fbc43467b2cbe5b3e5466d22310624" prot="public" static="no">
+        <name>E_PAPER_SET_RAM_X_ADDRESS_START_END_POSITION</name>
+        <initializer>0x44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="56" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1ab71a81b7f5197c4587a43a2ae5af0fad" prot="public" static="no">
+        <name>E_PAPER_SET_RAM_Y_ADDRESS_START_END_POSITION</name>
+        <initializer>0x45</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="57" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1ade2edf366b2c1cc657fcca7ae47a9550" prot="public" static="no">
+        <name>E_PAPER_SET_RAM_X_ADDRESS_COUNTER</name>
+        <initializer>0x4E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="58" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="epaper-29-dke_8h_1a604e2ea9edb65f939383d7d738c304fa" prot="public" static="no">
+        <name>E_PAPER_SET_RAM_Y_ADDRESS_COUNTER</name>
+        <initializer>0x4F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="59" column="9" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="epaper-29-dke_8h_1a41c04bc9903f823e8d1704858237c99c" prot="public" static="no">
+        <name>epaper_rotate_t</name>
+        <enumvalue id="epaper-29-dke_8h_1a41c04bc9903f823e8d1704858237c99cac27ef82fb4f5a64770255465b1dbde8a" prot="public">
+          <name>E_PAPER_ROTATE_0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="epaper-29-dke_8h_1a41c04bc9903f823e8d1704858237c99ca6ede905577feef7c35d38ce810e46032" prot="public">
+          <name>E_PAPER_ROTATE_90</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="epaper-29-dke_8h_1a41c04bc9903f823e8d1704858237c99ca787729228459a779ce7a12d1a318592c" prot="public">
+          <name>E_PAPER_ROTATE_180</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="epaper-29-dke_8h_1a41c04bc9903f823e8d1704858237c99ca646c08741c5c4f63dede0cea1a398b87" prot="public">
+          <name>E_PAPER_ROTATE_270</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="25" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="epaper-29-dke_8h_1ae39ca303aa5c75c3dc2e52f2291137f5" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* epaper_handle_t</definition>
+        <argsstring></argsstring>
+        <name>epaper_handle_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="92" column="1" bodyfile="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="epaper-29-dke_8h_1a23d5455260bc1bf15d0f56de621c4a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>epaper_handle_t</type>
+        <definition>epaper_handle_t iot_epaper_create</definition>
+        <argsstring>(spi_device_handle_t bus, epaper_conf_t *epconf)</argsstring>
+        <name>iot_epaper_create</name>
+        <param>
+          <type>spi_device_handle_t</type>
+          <declname>bus</declname>
+        </param>
+        <param>
+          <type><ref refid="structepaper__conf__t" kindref="compound">epaper_conf_t</ref> *</type>
+          <declname>epconf</declname>
+        </param>
+        <briefdescription>
+<para>Create and init epaper and return a epaper handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle of spi device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epconf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>configure struct for epaper device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>handle of epaper </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a3ffdb69096fb0d717c21d1aff7951973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t iot_epaper_delete</definition>
+        <argsstring>(epaper_handle_t dev, bool del_bus)</argsstring>
+        <name>iot_epaper_delete</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>del_bus</declname>
+        </param>
+        <briefdescription>
+<para>delete epaper handle_t </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>del_bus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to delete spi bus</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>ESP_OK Success</para></listitem><listitem><para>ESP_FAIL Fail </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a5c947e93fd02ccc42867ec89a59084fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_clean_paint</definition>
+        <argsstring>(epaper_handle_t dev, int colored)</argsstring>
+        <name>iot_epaper_clean_paint</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>clear display frame buffer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to set display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a14fa0ed8a3bf75089acf637c9f30ed32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int iot_epaper_get_width</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_get_width</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>get paint width </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>paint width </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a52367193f05cd49e0fc14f086f86ba7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_set_width</definition>
+        <argsstring>(epaper_handle_t dev, int width)</argsstring>
+        <name>iot_epaper_set_width</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>set paint width </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>paint width </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a8248c071197a9b3a3f684dad20b58f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int iot_epaper_get_height</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_get_height</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>get paint height </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>paint height </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1acbd4b2ef8459970d7f2fb72f52e564c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_set_height</definition>
+        <argsstring>(epaper_handle_t dev, int height)</argsstring>
+        <name>iot_epaper_set_height</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>set paint height </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1ad0fd67a15d90aeaafcc9a4baf87a40b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int iot_epaper_get_rotate</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_get_rotate</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>get paint rotate </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>current rotation </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1ab1b1c3cb342cd2a21153eafaa5f855dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_set_rotate</definition>
+        <argsstring>(epaper_handle_t dev, int rotate)</argsstring>
+        <name>iot_epaper_set_rotate</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotate</declname>
+        </param>
+        <briefdescription>
+<para>set paint rotate </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a3cae711ac4a405ea861f008cc7039c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* iot_epaper_get_image</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_get_image</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>get display data </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>Pointer to display data </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a68825f7629d4d2397c7b17f1c15035ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_string</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, const char *text, epaper_font_t *font, int colored)</argsstring>
+        <name>iot_epaper_draw_string</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="structepaper__font__t" kindref="compound">epaper_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw string start on point(x,y) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Font style </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1af1af977e2a7b954fdf14bdfe8c5f34ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_pixel</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, int colored)</argsstring>
+        <name>iot_epaper_draw_pixel</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw pixel and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point (x) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point (y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a0ab18f86cb1f404474eb1b03f2b48bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_char</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, char ascii_char, epaper_font_t *font, int colored)</argsstring>
+        <name>iot_epaper_draw_char</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>ascii_char</declname>
+        </param>
+        <param>
+          <type><ref refid="structepaper__font__t" kindref="compound">epaper_font_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw char and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascii_char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display char </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>font style </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a5623f3edc465fc31a785f98180c77b7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_line</definition>
+        <argsstring>(epaper_handle_t dev, int x0, int y0, int x1, int y1, int colored)</argsstring>
+        <name>iot_epaper_draw_line</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw line start on point(x0,y0) end on point(x1,y1) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a67acba57032922706484240aa6bb7871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_horizontal_line</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, int width, int colored)</argsstring>
+        <name>iot_epaper_draw_horizontal_line</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw horizontal line start on point(x,y) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line width </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1aacdc4d4cd87939818e77abe1bd044940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_vertical_line</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, int height, int colored)</argsstring>
+        <name>iot_epaper_draw_vertical_line</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw vertical line start on point(x,y) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (x) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>poing (y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>display</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a8261d8cb5c9f56c95027ab41e2d9819b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_rectangle</definition>
+        <argsstring>(epaper_handle_t dev, int x0, int y0, int x1, int y1, int colored)</argsstring>
+        <name>iot_epaper_draw_rectangle</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw rectangle point(x0,y0) (x1,y1) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x0,y0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x0,y0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x1,y1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x1,y1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a3f7973821987fc74538d7b99a93b1303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_filled_rectangle</definition>
+        <argsstring>(epaper_handle_t dev, int x0, int y0, int x1, int y1, int colored)</argsstring>
+        <name>iot_epaper_draw_filled_rectangle</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw fill rectangle point(x0,y0) (x1,y1) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x0,y0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x0,y0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x1,y1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x1,y1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="280" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a8636b6a9e3ee129deacb2f1b9fe2e2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_circle</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, int radius, int colored)</argsstring>
+        <name>iot_epaper_draw_circle</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw a circle at point(x,y) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x,y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x,y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1adc0c3b7545062a0dc7aafc17131cb887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_draw_filled_circle</definition>
+        <argsstring>(epaper_handle_t dev, int x, int y, int radius, int colored)</argsstring>
+        <name>iot_epaper_draw_filled_circle</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colored</declname>
+        </param>
+        <briefdescription>
+<para>draw a fill circle at point(x,y) and save on display data array, screen will display when call iot_epaper_display_frame function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x,y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point(x,y) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>radius of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>display color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="305" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a76299752a4f6963582f47b1eb63deeac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_wait_idle</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_wait_idle</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>wait until idle </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1aa7363340fbefe27db109ce3960f93858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_reset</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_reset</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>reset device </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1a4cffeac9600f678a8b22ce1abfb1c605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_display_frame</definition>
+        <argsstring>(epaper_handle_t dev, const unsigned char *frame_buffer)</argsstring>
+        <name>iot_epaper_display_frame</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>frame_buffer</declname>
+        </param>
+        <briefdescription>
+<para>dispaly frame, refresh screen </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="epaper-29-dke_8h_1af4b949a791fe4d8a0993e7ddaf8076e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iot_epaper_sleep</definition>
+        <argsstring>(epaper_handle_t dev)</argsstring>
+        <name>iot_epaper_sleep</name>
+        <param>
+          <type>epaper_handle_t</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>After this command is transmitted, the chip would enter the deep-sleep mode to save power. The deep sleep mode would return to standby by hardware reset. The only one parameter is a check code, the command would be executed if check code = 0xA5. You can use iot_epaper_reset() to awaken and EPD_Init() to initialize. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object handle of epaper </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h" line="336" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2017<sp/>Espressif<sp/>Systems<sp/>(Shanghai)<sp/>PTE<sp/>LTD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_IOT_E_PAPER_29_DKE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_IOT_E_PAPER_29_DKE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;driver/spi_master.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>orientation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>E_PAPER_ROTATE_0,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>E_PAPER_ROTATE_90,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>E_PAPER_ROTATE_180,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>E_PAPER_ROTATE_270,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/>epaper_rotate_t;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structepaper__font__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>width;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>height;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*font_table;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/><ref refid="structepaper__font__t" kindref="compound">epaper_font_t</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLORED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNCOLORED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>resolution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EPD_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EPD_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/>296</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>CONTROLLER<sp/>COMMANDS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DEPG0290B01<sp/>commands</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_DRIVER_OUTPUT_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_DEEP_SLEEP_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_SW_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_MASTER_ACTIVATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_DISPLAY_UPDATE_CONTROL_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_WRITE_RAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_WRITE_VCOM_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_WRITE_LUT_REGISTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_SET_RAM_X_ADDRESS_START_END_POSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_SET_RAM_Y_ADDRESS_START_END_POSITION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x45</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_SET_RAM_X_ADDRESS_COUNTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_PAPER_SET_RAM_Y_ADDRESS_COUNTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Paint<sp/>properties<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structepaper__paint__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>image;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>epaper_rotate_t<sp/>rotate;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structepaper__paint__t" kindref="compound">epaper_paint_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>EPD<sp/>properties<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structepaper__conf__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reset_pin;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dc_pin;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cs_pin;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>busy_pin;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mosi_pin;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>miso_pin;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sck_pin;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rst_active_level;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>busy_active_level;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dc_lev_data;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dc_lev_cmd;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clk_freq_hz;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>spi_host_device_t<sp/>spi_host;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>color_inv;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="structepaper__conf__t" kindref="compound">epaper_conf_t</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>epaper_handle_t;<sp/></highlight><highlight class="comment">/*handle<sp/>of<sp/>epaper*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">epaper_handle_t<sp/>iot_epaper_create(spi_device_handle_t<sp/>bus,<sp/><ref refid="structepaper__conf__t" kindref="compound">epaper_conf_t</ref><sp/>*<sp/>epconf);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">esp_err_t<sp/>iot_epaper_delete(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>del_bus);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_clean_paint(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iot_epaper_get_width(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_set_width(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iot_epaper_get_height(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_set_height(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iot_epaper_get_rotate(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_set_rotate(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotate);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>iot_epaper_get_image(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_string(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>text,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structepaper__font__t" kindref="compound">epaper_font_t</ref>*<sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_pixel(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_char(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ascii_char,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structepaper__font__t" kindref="compound">epaper_font_t</ref>*<sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_line(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_horizontal_line(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_vertical_line(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_rectangle(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_filled_rectangle(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y0,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_circle(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_draw_filled_circle(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colored);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_wait_idle(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_reset(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_display_frame(epaper_handle_t<sp/>dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>frame_buffer);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>iot_epaper_sleep(epaper_handle_t<sp/>dev);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//_IOT_E_PAPER_29_DKE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+On Power Up
+===========
+
+D (5509) badge_eink_lut: flags = 1.
+D (5509) badge_eink_lut: dump.
+D (5509) badge_eink_lut:  90 50 a0 50 50 00 00
+D (5509) badge_eink_lut:  00 00 10 a0 a0 80 00
+D (5509) badge_eink_lut:  90 50 a0 50 50 00 00
+D (5519) badge_eink_lut:  00 00 10 a0 a0 80 00
+D (5519) badge_eink_lut:  00 00 00 00 00 00 00
+D (5529) badge_eink_lut:  17 04 00 00 00
+D (5529) badge_eink_lut:  0b 04 00 00 00
+D (5539) badge_eink_lut:  06 05 00 00 00
+D (5539) badge_eink_lut:  04 05 00 00 00
+D (5539) badge_eink_lut:  01 0e 00 00 00
+D (5549) badge_eink_lut:  01 00 00 00 00
+D (5549) badge_eink_lut:  00 00 00 00 00
+
+
+After pressing START
+====================
+
+D (159429) badge_eink_lut: flags = 2.
+D (159429) badge_eink_lut: dump.
+D (159429) badge_eink_lut:  00 00 00 00 00 00 00
+D (159429) badge_eink_lut:  20 a0 80 00 00 00 00
+D (159429) badge_eink_lut:  50 10 00 00 00 00 00
+D (159439) badge_eink_lut:  00 00 00 00 00 00 00
+D (159439) badge_eink_lut:  00 00 00 00 00 00 00
+D (159449) badge_eink_lut:  03 05 00 00 00
+D (159449) badge_eink_lut:  01 08 00 00 00
+D (159459) badge_eink_lut:  02 00 00 00 00
+D (159459) badge_eink_lut:  00 00 00 00 00
+D (159459) badge_eink_lut:  00 00 00 00 00
+D (159469) badge_eink_lut:  00 00 00 00 00
+D (159469) badge_eink_lut:  00 00 00 00 00
+
+Move menu down to select "text demo 1" and pressing START
+=========================================================
+
+Button DOWN handled
+D (24039) badge_eink_lut: flags = 2.
+D (24039) badge_eink_lut: dump.
+D (24039) badge_eink_lut:  00 00 00 00 00 00 00
+D (24039) badge_eink_lut:  20 a0 80 00 00 00 00
+D (24039) badge_eink_lut:  50 10 00 00 00 00 00
+D (24049) badge_eink_lut:  00 00 00 00 00 00 00
+D (24049) badge_eink_lut:  00 00 00 00 00 00 00
+D (24059) badge_eink_lut:  03 05 00 00 00
+D (24059) badge_eink_lut:  01 08 00 00 00
+D (24059) badge_eink_lut:  02 00 00 00 00
+D (24069) badge_eink_lut:  00 00 00 00 00
+D (24069) badge_eink_lut:  00 00 00 00 00
+D (24079) badge_eink_lut:  00 00 00 00 00
+D (24079) badge_eink_lut:  00 00 00 00 00
+Selected 'text demo 1'
+D (101249) badge_eink_lut: flags = 0.
+D (101249) badge_eink_lut: dump.
+D (101249) badge_eink_lut:  90 60 a0 50 10 00 00
+D (101249) badge_eink_lut:  00 00 10 a0 a0 80 00
+D (101259) badge_eink_lut:  00 50 a0 90 50 00 00
+D (101259) badge_eink_lut:  00 00 10 50 60 80 00
+D (101259) badge_eink_lut:  00 00 00 00 00 00 00
+D (101269) badge_eink_lut:  17 04 00 00 00
+D (101269) badge_eink_lut:  0b 04 00 00 00
+D (101279) badge_eink_lut:  06 05 00 00 00
+D (101279) badge_eink_lut:  04 05 00 00 00
+D (101289) badge_eink_lut:  01 0e 00 00 00
+D (101289) badge_eink_lut:  01 00 00 00 00
+D (101289) badge_eink_lut:  00 00 00 00 00
+D (101319) badge_eink_lut: flags = 0.
+D (101319) badge_eink_lut: dump.
+D (101319) badge_eink_lut:  90 60 a0 50 10 00 00
+D (101319) badge_eink_lut:  00 00 10 a0 a0 80 00
+D (101319) badge_eink_lut:  00 50 a0 90 50 00 00
+D (101329) badge_eink_lut:  00 00 10 50 60 80 00
+D (101329) badge_eink_lut:  00 00 00 00 00 00 00
+D (101339) badge_eink_lut:  17 04 00 00 00
+D (101339) badge_eink_lut:  0b 04 00 00 00
+D (101339) badge_eink_lut:  06 05 00 00 00
+D (101349) badge_eink_lut:  04 05 00 00 00
+D (101349) badge_eink_lut:  01 0e 00 00 00
+D (101359) badge_eink_lut:  01 00 00 00 00
+D (101359) badge_eink_lut:  00 00 00 00 00
+

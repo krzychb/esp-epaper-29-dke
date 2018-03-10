@@ -1,0 +1,41 @@
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:70: warning: Compound epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:62: warning: Compound epaper_paint_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:33: warning: Compound epaper_font_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:71: warning: Member reset_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:72: warning: Member dc_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:73: warning: Member cs_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:74: warning: Member busy_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:75: warning: Member mosi_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:76: warning: Member miso_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:77: warning: Member sck_pin (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:79: warning: Member rst_active_level (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:80: warning: Member busy_active_level (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:81: warning: Member dc_lev_data (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:82: warning: Member dc_lev_cmd (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:84: warning: Member clk_freq_hz (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:85: warning: Member spi_host (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:87: warning: Member width (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:88: warning: Member height (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:89: warning: Member color_inv (variable) of class epaper_conf_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:34: warning: Member width (variable) of class epaper_font_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:35: warning: Member height (variable) of class epaper_font_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:36: warning: Member font_table (variable) of class epaper_font_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:63: warning: Member image (variable) of class epaper_paint_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:64: warning: Member rotate (variable) of class epaper_paint_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:65: warning: Member width (variable) of class epaper_paint_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:66: warning: Member height (variable) of class epaper_paint_t is not documented.
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:151: warning: argument 'paint' of command @param is not found in the argument list of iot_epaper_set_height(epaper_handle_t dev, int height)
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:155: warning: The following parameters of iot_epaper_set_height(epaper_handle_t dev, int height) are not documented:
+  parameter 'height'
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:166: warning: argument 'rotation' of command @param is not found in the argument list of iot_epaper_set_rotate(epaper_handle_t dev, int rotate)
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:170: warning: The following parameters of iot_epaper_set_rotate(epaper_handle_t dev, int rotate) are not documented:
+  parameter 'rotate'
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:243: warning: argument 'line' of command @param is not found in the argument list of iot_epaper_draw_vertical_line(epaper_handle_t dev, int x, int y, int height, int colored)
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:243: warning: argument 'display' of command @param is not found in the argument list of iot_epaper_draw_vertical_line(epaper_handle_t dev, int x, int y, int height, int colored)
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:252: warning: The following parameters of iot_epaper_draw_vertical_line(epaper_handle_t dev, int x, int y, int height, int colored) are not documented:
+  parameter 'height'
+  parameter 'colored'
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:292: warning: The following parameters of iot_epaper_draw_circle(epaper_handle_t dev, int x, int y, int radius, int colored) are not documented:
+  parameter 'radius'
+/home/krzysztof/esp/esp-epaper-29-dke/components/epaper-29-dke/epaper-29-dke.h:326: warning: The following parameters of iot_epaper_display_frame(epaper_handle_t dev, const unsigned char *frame_buffer) are not documented:
+  parameter 'frame_buffer'
