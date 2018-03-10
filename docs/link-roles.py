@@ -14,7 +14,7 @@ def get_github_rev():
 
 
 def setup(app):
-    baseurl = 'https://github.com/krzychb/esp-epaper-29-ws'
+    baseurl = 'https://github.com/krzychb/esp-epaper-29-dke'
     rev = get_github_rev()
     app.add_role('idf', autolink('{}/tree/{}/%s'.format(baseurl, rev)))
     app.add_role('idf_file', autolink('{}/blob/{}/%s'.format(baseurl, rev)))
